@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+        <header></header>
+        <div id="screen0">
+            <div class="welcomeScreen">
+                <h1 style="text-align: center;">Rock-Paper-Scissor Game</h1>
+                <span>
+                    <input type="text" id="fname" />
+                    <div id="username"></div>
+                </span>
+                <button id="submit1">Enter</button>
+            </div>
+        </div>
+        <div id="screen1">
+            <div class="screenWrapper">
+                <div class="scroller scroll">
+                    <div class="img-wrapper"><img src="./assets/rock.png" /></div>
+                    <div class="img-wrapper"><img src="./assets/paper.png" /></div>
+                    <div class="img-wrapper"><img src="./assets/scissors.png" /></div>
+                    <!-- <img src="./assets/rock.png" />
+                    <img src="./assets/paper.png" />
+                    <img src="./assets/scissors.png" /> -->
+                </div>
+                <span>
+                    <strong id="flash" class="stop"></strong>
+                    <button id="submit2">Start</button>
+                    <button id="submit3" class="stop">Next</button>
+                </span>
+                <div class="scroller scroll stop" id="userBoard">
+                    <div class="img-wrapper1" id="rock"><img src="./assets/rock.png" /></div>
+                    <div class="img-wrapper1" id="paper"><img src="./assets/paper.png" /></div>
+                    <div class="img-wrapper1" id="scissors"><img src="./assets/scissors.png" /></div>
+                    <!-- <img src="./assets/rock.png" />
+                    <img src="./assets/paper.png" />
+                    <img src="./assets/scissors.png" /> -->
+                </div>
+            </div>
+        </div>
+        <div id="screen2"></div>
+        <div id="screen3"></div>
+        <footer></footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

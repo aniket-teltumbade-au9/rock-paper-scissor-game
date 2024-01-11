@@ -1,0 +1,121 @@
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: midnightblue;
+    color: whitesmoke
+}
+
+.inactive {
+    display: none
+}
+
+.welcomeScreen {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.screenWrapper {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 0px rgba(40, 157, 181, 1);
+    overflow: hidden;
+    position: relative;
+}
+
+.screenWrapper .scroller {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* background: midnightblue; */
+}
+
+/* .scroll {
+    animation: move 3s infinite ease-in-out;
+    position: relative;
+}
+
+@keyframes move {
+    from {
+        left: 0
+    }
+
+    33% {
+        left: 25%;
+    }
+
+    66% {
+        left: 37.5%;
+    }
+
+    to {
+        left: 50%
+    }
+} */
+.screenWrapper .scroller .img-wrapper {
+    width: 33.333333%;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeBox {
+    background-color: aqua !important;
+}
+
+.screenWrapper .scroller .img-wrapper img {
+    max-height: 100%;
+    width: auto;
+}
+
+.screenWrapper .scroller .img-wrapper1 {
+    width: 33.333333%;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenWrapper .scroller .img-wrapper1 img {
+    max-height: 100%;
+    width: auto;
+}
+
+.stop {
+    display: none !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    line-height: 50px;
+    font-size: larger;
+    right: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    line-height: 50px;
+    font-size: larger;
+    right: 45%;
+}
